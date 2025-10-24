@@ -18,27 +18,34 @@
 }
 
 .board{
+    position: relative;
     height: 80vh;
     width: 30vw;
-    background-color: rgb(64, 69, 95);
+    background-color: rgb(29, 30, 30);
     border: 2px solid black;
    
 }
 
 h3{
-    background-color: white;
-    color: black;
+    background-color: rgb(56, 56, 229);
+    color: white;
+    padding: 10px;
     margin: 10px;
 }
 
 .items{
-    margin: 2px;
+    padding: 5px;
+    margin: 10px;
     
 }
 
 .add-button{
     height: 25px;
     width: 100px;
-    background-color: rgb(64, 69, 95);
+    color: white;
+    background-color: black;
     margin: 20px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
