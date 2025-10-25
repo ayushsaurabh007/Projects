@@ -3,6 +3,7 @@ const to_do = document.querySelector(".to-do");
 const ongoing = document.querySelector(".on");
 const completed = document.querySelector(".com");
 const boards = document.querySelectorAll(".board");
+const del_board = document.querySelector(".del-board");
 
 //add-button-functionality 
 to_do.addEventListener("click" , ()=>{
@@ -85,3 +86,13 @@ boards.forEach((boards) => {
     })
 })
 
+del_board.addEventListener("dragover", (e) => {
+  e.preventDefault(); // allows drop
+});
+
+del_board.addEventListener("drop" , (e)=>{
+    e.preventDefault();
+    console.log("mere upar se kuch to gaya " , Math.random())
+    let curritem = document.querySelector(".flying");
+    curritem.remove()
+})
