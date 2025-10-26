@@ -1,11 +1,12 @@
-import express from "express"
-import {registerUser , login} from "../controller/user.controller.js"
+import express from 'express'
+import { registerUser , verifyUser , login} from '../controller/user.controller.js'
 
 
 const router = express.Router()
 
-router.post("/register" , registerUser)   //this is post request as we are submitting data not retriving it
+router.post("/register" , registerUser);
 
-router.get("/login" , login)
+router.get("/verify/:token" , verifyUser)
 
-export default router
+router.post("/login" , login);
+export default router 
