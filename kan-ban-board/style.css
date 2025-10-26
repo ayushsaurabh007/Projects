@@ -51,13 +51,17 @@ h3{
     right: 0;
 }
 
-.del-container{
+.del-board{
+    height: 50px;
+    width: 100vw;
+    background-color: rgb(51, 32, 32);
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .delete{
-    background-color: red;
+    background-color: rgb(184, 0, 0);
     height: 40px;
     width: 90vw;
     margin: 10px;
