@@ -77,7 +77,7 @@ public class TileManager {
 
             br.close();
         } catch (Exception e) {
-            // TODO: handle exception
+            System.out.println("error in tile manager class");
         }
     }
 
