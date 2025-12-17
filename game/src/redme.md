@@ -1,6 +1,6 @@
 # How  to run the game 
 - go to main.java and press run (linux and mac)
 - open terminal (for windows)<br>
-cd s\game\src<br>
+cd game\src<br>
 javac main/*.java<br>
 java main.Main
