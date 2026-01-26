@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+    min-height: 100vh;
+    height: auto;
+    width: 100vw;
+    background-color: beige;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.body{
+    min-height: 80%;
+    height: auto;
+    width: 80%;
+    border: 2px solid black;
+    display: flex;
+    flex-flow: row wrap;
+    /* background-color: red; */
+
+}
+
+.days{
+    height: 25px;
+    width: 25px;
+    border-radius: 15px;
+    background-color: black;
+    color: black;
+    margin: 10px;
+    font-size: 1px;
+    text-align: center;
+}
+
+.days_ended{
+    height: 25px;
+    width: 25px;
+    border-radius: 15px;
+    color: rgb(215, 215, 150);
+    background-color: rgb(215, 215, 150);
+    margin: 10px;
+}
