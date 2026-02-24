@@ -9,7 +9,8 @@
     height: auto;
     width: 100vw;
     padding-top: 50px;
-    background-color: beige;
+    background-color: #130f0e;
+    color: #f2f0ef;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -29,7 +30,8 @@
 .date{
     height: 50px;
     min-width: 100px;
-    background-color: burlywood;
+    display: flex;
+    background-color:#6a4c48 ;
     margin: 10px;
     padding: 4px;
 }
@@ -37,7 +39,7 @@
 .rate{
     height: 50px;
     min-width: 100px;
-    background-color: salmon;
+    background-color: #a67973;
     margin: 10px;
     padding: 4px;
 }
@@ -46,7 +48,7 @@
     min-height: 500px;
     height: auto;
     width: 40vw;
-    background-color: burlywood;
+    background-color: #a67973;
     margin: 10px;
     padding: 4px;
 }
@@ -55,7 +57,7 @@
     min-height: 350px;
     height: auto;
     width: 40vw;
-    background-color: salmon;
+    background-color: #6a4c48;
     margin: 10px;
     padding: 4px;
 }

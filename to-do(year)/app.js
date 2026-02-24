@@ -6,25 +6,29 @@ for(let i=0 ; i<365 ; i++){
     let nd = document.createElement("div");
     nd.innerHTML = i
     nd.classList.add("days");
-    // nd.addEventListener("click" , () => {
-    //     console.log("click registered  " + nd.innerHTML)
-    //     nd.classList.add("days_ended");
-    // })
     nd.addEventListener("click" , () => {
         console.log("click registered  " + nd.innerHTML)
-        nd.classList.add("days_ended")
-        let num = i;
-        for(let month of months){
-        if(num < month.days){
-            console.log(num+1 + " " +month.name)
-            return {
-                Month : month.name,
-                Date : num+1
-            }
-        }
-        num -= month.days;
-        }
+        nd.classList.add("days_ended");
+        cpage(i)
+        // let obj = ndate(i);
+        // console.log( obj )
+        // console.log(String(obj.month))
     })
+    // nd.addEventListener("click" , () => {
+    //     console.log("click registered  " + nd.innerHTML)
+    //     nd.classList.add("days_ended")
+    //     let num = i;
+    //     for(let month of months){
+    //     if(num < month.days){
+    //         console.log(num+1 + " " +month.name)
+    //         return {
+    //             Month : month.name,
+    //             Date : num+1
+    //         }
+    //     }
+    //     num -= month.days;
+    //     }
+    // })
     body.appendChild(nd)
 }
 
@@ -60,4 +64,10 @@ let ndate = function (num){
         num -= month.days;
     }
     return -1;
+}
+
+
+
+let cpage = function (Date){
+    window.location.href = `page.html?Date=${Date}`;
 }
